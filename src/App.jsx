@@ -22,6 +22,14 @@ function App() {
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to]);
   };
+      <div className="w-full">
+        <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              convert();
+            }}
+          >
             <div className="relative w-full h-0.5">
               <button
                 type="button"
